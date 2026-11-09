@@ -1,0 +1,601 @@
+brand,model,storage_gb,ram_gb,condition,age_months,battery_health,price
+Apple,iPhone 13,256,4,fair,22,82,41500.0
+Xiaomi,Redmi Note 11,64,8,like_new,26,99,9500.0
+OnePlus,OnePlus 9,128,8,like_new,40,83,23200.0
+Samsung,Galaxy S21,256,8,fair,21,94,29800.0
+Samsung,Galaxy S21,64,8,fair,42,71,17500.0
+OnePlus,OnePlus 9,64,6,poor,34,80,12900.0
+Xiaomi,Redmi Note 11,256,6,poor,37,75,6000.0
+Samsung,Galaxy S21,128,8,like_new,36,90,27800.0
+OnePlus,OnePlus 9,128,6,good,43,81,20300.0
+Samsung,Galaxy S21,128,6,like_new,33,84,30600.0
+Apple,iPhone 12,256,4,good,10,94,41500.0
+Apple,iPhone 13,64,4,poor,40,83,18700.0
+OnePlus,OnePlus 9,256,8,good,13,90,35500.0
+Apple,iPhone 13,256,4,like_new,38,93,42000.0
+Samsung,Galaxy S21,256,6,good,38,86,26500.0
+Apple,iPhone 13,64,4,like_new,8,83,53100.0
+OnePlus,OnePlus 9,256,8,fair,6,92,34200.0
+Samsung,Galaxy S22,64,8,fair,38,79,22100.0
+Apple,iPhone 13,256,4,like_new,15,82,51800.0
+Apple,iPhone 13,64,4,poor,5,95,32500.0
+Apple,iPhone 12,128,4,fair,8,86,35300.0
+Xiaomi,Redmi Note 11,128,8,good,21,82,9700.0
+Samsung,Galaxy S21,64,8,like_new,7,93,41100.0
+OnePlus,OnePlus 9,64,6,poor,25,98,15900.0
+Samsung,Galaxy S21,128,6,like_new,20,77,35100.0
+Samsung,Galaxy S22,128,6,poor,6,80,29700.0
+Samsung,Galaxy S21,256,6,good,34,83,31500.0
+Apple,iPhone 12,256,4,good,35,93,30100.0
+Samsung,Galaxy S21,64,6,like_new,23,97,28500.0
+Samsung,Galaxy S21,256,8,good,39,87,25000.0
+Apple,iPhone 12,64,4,poor,25,91,19200.0
+Apple,iPhone 12,128,4,like_new,29,72,29800.0
+Samsung,Galaxy S22,256,6,good,38,71,33700.0
+Samsung,Galaxy S21,128,6,like_new,33,73,27600.0
+Samsung,Galaxy S22,64,6,poor,47,87,16100.0
+Samsung,Galaxy S21,64,6,like_new,9,98,39900.0
+Samsung,Galaxy S21,64,8,like_new,15,84,35600.0
+Samsung,Galaxy S21,64,8,fair,27,84,21500.0
+Apple,iPhone 12,128,4,fair,41,83,20900.0
+Samsung,Galaxy S21,256,6,like_new,43,86,26700.0
+Apple,iPhone 12,64,4,fair,33,73,21300.0
+Apple,iPhone 12,256,4,fair,45,93,24100.0
+Samsung,Galaxy S22,256,6,poor,13,77,30300.0
+Samsung,Galaxy S22,128,8,good,40,83,27000.0
+Apple,iPhone 12,256,4,fair,16,88,34700.0
+Samsung,Galaxy S22,256,8,poor,11,74,30100.0
+Apple,iPhone 13,256,4,poor,9,96,41600.0
+Xiaomi,Redmi Note 11,256,8,like_new,43,73,9600.0
+Apple,iPhone 13,256,4,good,32,82,40000.0
+Samsung,Galaxy S21,256,6,fair,20,77,28400.0
+Xiaomi,Redmi Note 11,64,8,like_new,6,94,12700.0
+Apple,iPhone 13,128,4,fair,35,96,32200.0
+Apple,iPhone 12,64,4,poor,37,79,15400.0
+Xiaomi,Redmi Note 11,128,6,like_new,45,70,7700.0
+Apple,iPhone 12,64,4,fair,46,73,17200.0
+Xiaomi,Redmi Note 11,256,6,poor,29,82,6600.0
+Apple,iPhone 13,256,4,like_new,36,94,40500.0
+Apple,iPhone 13,256,4,good,8,84,58000.0
+Apple,iPhone 12,256,4,fair,15,98,35600.0
+Xiaomi,Redmi Note 11,128,8,fair,9,89,10700.0
+Apple,iPhone 13,256,4,good,3,98,69800.0
+Apple,iPhone 12,256,4,fair,39,82,23400.0
+Samsung,Galaxy S21,256,6,like_new,32,73,31400.0
+OnePlus,OnePlus 9,128,8,like_new,18,85,30100.0
+Samsung,Galaxy S22,64,6,good,44,82,21700.0
+Samsung,Galaxy S22,64,6,good,26,77,29300.0
+Apple,iPhone 12,256,4,poor,46,73,15400.0
+Samsung,Galaxy S21,128,8,good,9,75,35200.0
+Xiaomi,Redmi Note 11,64,6,poor,44,87,4200.0
+Samsung,Galaxy S22,64,6,good,8,86,41200.0
+Apple,iPhone 12,64,4,poor,5,82,26700.0
+Samsung,Galaxy S22,256,8,good,40,79,31700.0
+Samsung,Galaxy S22,256,6,poor,27,71,29900.0
+Apple,iPhone 12,64,4,like_new,31,87,29200.0
+Apple,iPhone 12,64,4,like_new,19,97,32700.0
+Samsung,Galaxy S22,64,6,poor,7,71,24700.0
+Xiaomi,Redmi Note 11,256,6,poor,39,97,5800.0
+Xiaomi,Redmi Note 11,128,8,poor,31,89,5800.0
+OnePlus,OnePlus 9,256,8,fair,17,85,23600.0
+Xiaomi,Redmi Note 11,256,6,good,33,89,9400.0
+Apple,iPhone 12,128,4,good,10,82,43000.0
+Samsung,Galaxy S21,128,6,fair,19,92,28700.0
+Apple,iPhone 12,256,4,like_new,16,93,46700.0
+Xiaomi,Redmi Note 11,256,6,good,37,79,9800.0
+Samsung,Galaxy S22,128,8,fair,12,94,38700.0
+Samsung,Galaxy S22,64,6,good,10,92,43100.0
+Apple,iPhone 12,128,4,poor,44,73,16300.0
+Samsung,Galaxy S22,64,6,fair,35,87,22000.0
+OnePlus,OnePlus 9,64,8,poor,46,75,11800.0
+Samsung,Galaxy S21,256,8,poor,38,97,18800.0
+OnePlus,OnePlus 9,128,8,like_new,7,85,35200.0
+Apple,iPhone 13,128,4,like_new,28,84,42000.0
+Samsung,Galaxy S21,256,8,poor,44,93,15100.0
+Samsung,Galaxy S21,64,8,poor,41,73,15000.0
+Apple,iPhone 13,128,4,fair,35,82,27800.0
+Apple,iPhone 12,256,4,fair,18,92,34500.0
+Xiaomi,Redmi Note 11,128,8,good,38,80,7700.0
+Apple,iPhone 12,256,4,like_new,6,98,49700.0
+OnePlus,OnePlus 9,128,8,like_new,35,75,22400.0
+Samsung,Galaxy S21,256,6,fair,24,74,31200.0
+Apple,iPhone 13,256,4,poor,45,82,24500.0
+Apple,iPhone 13,256,4,fair,8,73,52400.0
+Apple,iPhone 13,256,4,fair,3,72,46500.0
+Samsung,Galaxy S21,128,6,good,46,83,22300.0
+Samsung,Galaxy S21,128,8,poor,36,93,14900.0
+Apple,iPhone 13,64,4,poor,33,78,20900.0
+Apple,iPhone 13,64,4,fair,47,70,21300.0
+Samsung,Galaxy S22,128,8,like_new,33,96,34600.0
+Apple,iPhone 13,128,4,like_new,41,93,36200.0
+Apple,iPhone 13,256,4,good,32,97,39900.0
+Apple,iPhone 13,64,4,like_new,39,88,29300.0
+Xiaomi,Redmi Note 11,64,6,good,41,77,7000.0
+Xiaomi,Redmi Note 11,256,8,like_new,37,95,11000.0
+Samsung,Galaxy S21,64,6,good,12,73,31800.0
+Samsung,Galaxy S22,256,8,fair,31,72,29900.0
+OnePlus,OnePlus 9,256,6,like_new,11,70,39300.0
+Samsung,Galaxy S22,256,6,fair,30,85,30400.0
+Apple,iPhone 13,64,4,like_new,42,83,31700.0
+OnePlus,OnePlus 9,128,6,like_new,37,75,21900.0
+Xiaomi,Redmi Note 11,128,8,poor,14,89,7800.0
+Samsung,Galaxy S22,64,6,poor,27,79,22000.0
+Samsung,Galaxy S22,64,6,fair,22,98,29800.0
+Apple,iPhone 13,256,4,good,44,84,36900.0
+Xiaomi,Redmi Note 11,64,6,poor,15,72,6200.0
+OnePlus,OnePlus 9,128,6,good,31,99,22500.0
+Xiaomi,Redmi Note 11,64,6,poor,29,88,5300.0
+Apple,iPhone 12,128,4,good,24,74,29100.0
+Apple,iPhone 12,128,4,fair,29,91,25300.0
+Samsung,Galaxy S22,128,8,fair,17,77,36800.0
+Apple,iPhone 12,128,4,fair,31,85,25000.0
+Samsung,Galaxy S21,256,6,fair,28,96,28300.0
+Xiaomi,Redmi Note 11,256,6,fair,15,93,10400.0
+Apple,iPhone 12,128,4,good,4,73,43400.0
+Xiaomi,Redmi Note 11,256,6,poor,5,72,9700.0
+Samsung,Galaxy S21,64,8,fair,17,71,25100.0
+Samsung,Galaxy S21,256,6,fair,41,82,23900.0
+Apple,iPhone 12,128,4,fair,8,85,33700.0
+Samsung,Galaxy S21,64,6,poor,23,93,19300.0
+Apple,iPhone 12,64,4,fair,36,81,20500.0
+Samsung,Galaxy S21,64,8,fair,12,92,30000.0
+OnePlus,OnePlus 9,64,8,good,40,97,17400.0
+Apple,iPhone 12,256,4,poor,47,89,18300.0
+Apple,iPhone 13,256,4,good,17,72,48200.0
+Apple,iPhone 13,128,4,good,24,97,38200.0
+Apple,iPhone 13,64,4,poor,45,71,15200.0
+Apple,iPhone 12,64,4,like_new,25,99,27700.0
+Samsung,Galaxy S22,64,8,like_new,15,77,41700.0
+Xiaomi,Redmi Note 11,128,8,fair,21,90,9000.0
+OnePlus,OnePlus 9,256,8,good,36,86,24400.0
+Samsung,Galaxy S21,64,8,good,26,93,26800.0
+Xiaomi,Redmi Note 11,128,6,poor,16,87,6800.0
+Xiaomi,Redmi Note 11,128,8,good,41,85,7500.0
+Apple,iPhone 13,256,4,poor,31,88,25500.0
+Apple,iPhone 13,128,4,good,11,77,45400.0
+Apple,iPhone 13,256,4,good,21,79,41900.0
+Samsung,Galaxy S22,64,8,good,15,75,37200.0
+OnePlus,OnePlus 9,256,6,poor,30,96,17500.0
+Samsung,Galaxy S22,256,8,fair,35,78,29000.0
+Samsung,Galaxy S21,256,8,like_new,8,85,44900.0
+Samsung,Galaxy S22,128,8,poor,32,82,19900.0
+Apple,iPhone 13,64,4,poor,36,99,19800.0
+OnePlus,OnePlus 9,64,8,like_new,16,71,27100.0
+OnePlus,OnePlus 9,256,6,poor,41,83,15100.0
+Xiaomi,Redmi Note 11,64,6,poor,32,72,4800.0
+Samsung,Galaxy S22,64,6,poor,23,94,20400.0
+Apple,iPhone 13,256,4,like_new,19,73,52400.0
+OnePlus,OnePlus 9,256,8,fair,37,70,18300.0
+Samsung,Galaxy S21,256,6,good,5,97,50700.0
+Apple,iPhone 12,256,4,good,3,98,48100.0
+Samsung,Galaxy S22,128,8,like_new,37,82,35900.0
+Xiaomi,Redmi Note 11,64,8,like_new,21,95,12100.0
+Samsung,Galaxy S21,256,6,good,34,87,28900.0
+Samsung,Galaxy S21,128,8,poor,41,75,15800.0
+Apple,iPhone 13,128,4,fair,22,94,40600.0
+Samsung,Galaxy S22,64,6,poor,21,86,23800.0
+Apple,iPhone 12,256,4,poor,34,92,20800.0
+Samsung,Galaxy S22,128,6,poor,12,84,32100.0
+Apple,iPhone 13,64,4,like_new,18,76,43200.0
+Apple,iPhone 12,128,4,poor,31,96,19000.0
+Samsung,Galaxy S21,256,8,poor,46,92,16200.0
+Samsung,Galaxy S22,128,8,poor,20,77,26100.0
+Apple,iPhone 12,64,4,fair,47,92,18500.0
+Samsung,Galaxy S22,128,6,like_new,16,95,49000.0
+Apple,iPhone 12,64,4,good,42,70,21500.0
+Apple,iPhone 12,64,4,poor,29,93,18800.0
+Xiaomi,Redmi Note 11,128,8,poor,47,87,4500.0
+Samsung,Galaxy S21,64,6,like_new,28,79,27500.0
+Apple,iPhone 12,256,4,poor,26,98,24900.0
+Samsung,Galaxy S21,256,6,poor,36,73,16000.0
+Apple,iPhone 13,128,4,like_new,47,83,30500.0
+OnePlus,OnePlus 9,64,6,like_new,5,95,34600.0
+OnePlus,OnePlus 9,64,6,poor,34,83,13600.0
+Samsung,Galaxy S21,128,6,like_new,21,74,36000.0
+Samsung,Galaxy S21,256,8,like_new,3,73,47100.0
+Apple,iPhone 13,64,4,good,22,86,34500.0
+OnePlus,OnePlus 9,128,8,good,13,79,27200.0
+Apple,iPhone 12,256,4,fair,18,76,33500.0
+Apple,iPhone 12,256,4,good,5,84,48300.0
+Samsung,Galaxy S21,64,6,like_new,30,71,27400.0
+Apple,iPhone 13,64,4,like_new,44,75,30000.0
+Apple,iPhone 13,64,4,fair,30,84,30100.0
+Apple,iPhone 12,64,4,fair,33,95,22100.0
+Apple,iPhone 12,256,4,fair,30,83,27300.0
+Apple,iPhone 13,256,4,poor,16,77,32100.0
+Samsung,Galaxy S22,128,8,poor,30,97,24300.0
+OnePlus,OnePlus 9,256,8,like_new,17,86,36300.0
+Apple,iPhone 12,64,4,fair,21,89,27000.0
+Apple,iPhone 12,256,4,like_new,36,80,32600.0
+OnePlus,OnePlus 9,64,8,fair,35,95,19100.0
+OnePlus,OnePlus 9,64,8,like_new,43,74,18700.0
+OnePlus,OnePlus 9,64,6,fair,34,71,16700.0
+Apple,iPhone 13,256,4,good,3,97,69300.0
+Apple,iPhone 13,128,4,fair,20,73,36000.0
+Apple,iPhone 13,256,4,good,27,74,40900.0
+Samsung,Galaxy S22,256,6,like_new,23,87,47300.0
+Apple,iPhone 12,256,4,poor,11,70,29500.0
+Apple,iPhone 13,64,4,poor,42,95,17500.0
+Apple,iPhone 12,64,4,fair,26,81,24300.0
+Samsung,Galaxy S22,256,8,poor,28,78,23400.0
+Apple,iPhone 13,128,4,poor,26,98,25300.0
+Apple,iPhone 13,128,4,fair,22,82,33800.0
+OnePlus,OnePlus 9,256,8,fair,20,74,26100.0
+Samsung,Galaxy S21,256,6,good,11,90,39000.0
+Samsung,Galaxy S21,128,8,poor,36,89,17100.0
+Samsung,Galaxy S21,128,8,like_new,36,89,29100.0
+Xiaomi,Redmi Note 11,128,8,good,7,93,12200.0
+Xiaomi,Redmi Note 11,256,6,fair,7,70,13200.0
+Samsung,Galaxy S21,64,6,like_new,47,99,24500.0
+Xiaomi,Redmi Note 11,256,6,fair,20,88,12200.0
+Samsung,Galaxy S22,128,8,good,21,70,36200.0
+Samsung,Galaxy S22,128,6,like_new,11,80,49600.0
+OnePlus,OnePlus 9,64,8,good,10,79,24900.0
+Apple,iPhone 13,256,4,fair,13,75,44200.0
+Apple,iPhone 13,128,4,poor,18,78,29900.0
+Xiaomi,Redmi Note 11,64,6,good,26,71,8200.0
+Apple,iPhone 13,64,4,like_new,24,72,38600.0
+Xiaomi,Redmi Note 11,256,6,good,42,73,8000.0
+Apple,iPhone 12,64,4,poor,16,96,22200.0
+Apple,iPhone 13,256,4,fair,47,80,25100.0
+Xiaomi,Redmi Note 11,128,6,like_new,45,79,6700.0
+Samsung,Galaxy S22,256,6,poor,36,88,22300.0
+Samsung,Galaxy S22,64,6,good,23,74,31300.0
+Xiaomi,Redmi Note 11,128,8,fair,36,78,7100.0
+Samsung,Galaxy S21,64,6,poor,4,93,24100.0
+Apple,iPhone 12,128,4,like_new,13,96,39300.0
+Samsung,Galaxy S21,64,6,like_new,41,88,24200.0
+Apple,iPhone 13,128,4,like_new,14,96,55900.0
+OnePlus,OnePlus 9,128,8,poor,36,80,15200.0
+Samsung,Galaxy S22,64,6,like_new,16,74,40500.0
+Xiaomi,Redmi Note 11,64,6,poor,17,85,6400.0
+Samsung,Galaxy S21,128,6,fair,40,83,20600.0
+Apple,iPhone 13,64,4,poor,7,84,33700.0
+Apple,iPhone 13,64,4,good,27,98,34700.0
+Apple,iPhone 12,256,4,like_new,20,73,41200.0
+Apple,iPhone 13,64,4,poor,30,72,21400.0
+Samsung,Galaxy S21,128,8,fair,32,75,23400.0
+Xiaomi,Redmi Note 11,256,8,fair,19,84,10400.0
+Apple,iPhone 13,256,4,good,28,71,43900.0
+Apple,iPhone 13,256,4,fair,31,71,34300.0
+OnePlus,OnePlus 9,256,8,like_new,12,97,38700.0
+Samsung,Galaxy S21,256,6,like_new,27,99,35500.0
+Apple,iPhone 12,128,4,good,38,73,24500.0
+OnePlus,OnePlus 9,128,8,good,20,74,24900.0
+Samsung,Galaxy S21,256,8,fair,23,79,27100.0
+Apple,iPhone 13,128,4,fair,45,85,25300.0
+Samsung,Galaxy S21,64,8,fair,47,95,15700.0
+Apple,iPhone 13,64,4,poor,36,92,20800.0
+Samsung,Galaxy S21,128,6,poor,32,75,19200.0
+OnePlus,OnePlus 9,128,6,fair,36,81,18700.0
+Apple,iPhone 13,256,4,fair,25,91,40200.0
+Xiaomi,Redmi Note 11,64,8,fair,21,80,8200.0
+Samsung,Galaxy S21,64,6,like_new,40,72,22700.0
+OnePlus,OnePlus 9,256,8,fair,16,70,29500.0
+Apple,iPhone 12,64,4,poor,45,95,13200.0
+Xiaomi,Redmi Note 11,256,6,like_new,8,96,15400.0
+Apple,iPhone 12,64,4,good,33,97,26100.0
+Xiaomi,Redmi Note 11,256,8,fair,27,91,8000.0
+Xiaomi,Redmi Note 11,256,6,good,16,88,13300.0
+Apple,iPhone 12,128,4,good,22,90,33900.0
+Samsung,Galaxy S22,128,8,fair,42,98,23900.0
+Apple,iPhone 12,256,4,poor,41,79,19100.0
+Apple,iPhone 12,256,4,good,22,88,35000.0
+OnePlus,OnePlus 9,64,8,good,44,98,16500.0
+Xiaomi,Redmi Note 11,256,8,like_new,36,99,10400.0
+Apple,iPhone 13,128,4,fair,23,90,35400.0
+Apple,iPhone 12,128,4,good,16,77,36000.0
+Samsung,Galaxy S21,128,8,good,12,89,39300.0
+Samsung,Galaxy S22,64,6,good,3,71,45000.0
+Apple,iPhone 13,256,4,like_new,9,90,58200.0
+OnePlus,OnePlus 9,64,6,good,23,99,24300.0
+Apple,iPhone 12,64,4,good,21,88,28900.0
+Apple,iPhone 12,256,4,fair,6,98,42400.0
+Apple,iPhone 13,64,4,good,24,96,35500.0
+Samsung,Galaxy S21,64,6,fair,40,87,18400.0
+Samsung,Galaxy S22,128,8,like_new,25,78,39700.0
+Apple,iPhone 13,256,4,like_new,47,70,37000.0
+Samsung,Galaxy S22,256,6,fair,8,99,49600.0
+Apple,iPhone 12,64,4,good,12,71,34100.0
+OnePlus,OnePlus 9,128,8,good,38,90,19900.0
+Xiaomi,Redmi Note 11,128,8,good,17,77,10500.0
+Apple,iPhone 12,128,4,like_new,43,78,26100.0
+Apple,iPhone 13,256,4,like_new,17,74,54500.0
+Apple,iPhone 12,64,4,fair,5,76,30800.0
+Apple,iPhone 13,256,4,poor,7,71,36400.0
+OnePlus,OnePlus 9,256,6,good,10,70,30200.0
+Apple,iPhone 12,256,4,fair,27,83,31700.0
+OnePlus,OnePlus 9,128,8,good,27,92,24800.0
+Apple,iPhone 12,64,4,fair,27,92,26500.0
+Apple,iPhone 12,128,4,good,12,88,38100.0
+Apple,iPhone 12,256,4,like_new,37,72,30700.0
+Apple,iPhone 13,64,4,like_new,40,71,31900.0
+Samsung,Galaxy S21,256,6,like_new,47,89,27100.0
+Samsung,Galaxy S21,64,8,poor,45,99,12500.0
+Xiaomi,Redmi Note 11,128,8,like_new,24,89,9900.0
+Apple,iPhone 12,64,4,fair,36,86,23900.0
+Samsung,Galaxy S21,256,6,good,4,85,43000.0
+Samsung,Galaxy S21,128,6,fair,14,78,30000.0
+Apple,iPhone 13,256,4,good,28,74,41600.0
+Samsung,Galaxy S21,64,6,fair,10,79,27600.0
+Samsung,Galaxy S22,256,6,like_new,19,70,46500.0
+Apple,iPhone 12,256,4,fair,38,75,24100.0
+Apple,iPhone 13,128,4,poor,24,95,28100.0
+Xiaomi,Redmi Note 11,128,6,like_new,24,87,10300.0
+Apple,iPhone 12,64,4,like_new,43,72,21300.0
+Apple,iPhone 13,128,4,fair,10,72,39600.0
+Apple,iPhone 13,64,4,good,18,80,36500.0
+Samsung,Galaxy S22,128,8,good,14,97,42200.0
+OnePlus,OnePlus 9,256,6,like_new,44,90,21800.0
+Apple,iPhone 13,64,4,good,30,82,34900.0
+Apple,iPhone 13,256,4,poor,7,94,39800.0
+Apple,iPhone 13,256,4,good,4,76,61300.0
+Samsung,Galaxy S21,128,8,poor,6,87,25800.0
+OnePlus,OnePlus 9,256,8,poor,17,84,18400.0
+Samsung,Galaxy S21,256,8,good,39,81,26900.0
+Samsung,Galaxy S22,128,8,good,12,75,46200.0
+Apple,iPhone 13,64,4,fair,28,80,27800.0
+Samsung,Galaxy S21,128,8,poor,31,81,16200.0
+OnePlus,OnePlus 9,128,6,poor,17,78,20400.0
+Samsung,Galaxy S21,128,8,good,32,80,25600.0
+Xiaomi,Redmi Note 11,128,6,like_new,20,85,11100.0
+Samsung,Galaxy S22,256,6,poor,20,95,28700.0
+OnePlus,OnePlus 9,256,8,fair,14,85,30000.0
+Apple,iPhone 12,128,4,like_new,33,99,34400.0
+Apple,iPhone 13,256,4,good,7,97,56400.0
+Xiaomi,Redmi Note 11,64,8,fair,4,98,10800.0
+Apple,iPhone 13,64,4,good,36,74,25700.0
+Xiaomi,Redmi Note 11,64,8,good,23,70,7900.0
+OnePlus,OnePlus 9,256,8,poor,47,81,13500.0
+Samsung,Galaxy S22,256,6,like_new,22,93,48300.0
+Samsung,Galaxy S21,64,8,poor,6,98,22900.0
+Xiaomi,Redmi Note 11,256,8,fair,46,96,5900.0
+Samsung,Galaxy S21,128,6,poor,25,84,17100.0
+Samsung,Galaxy S22,256,8,fair,43,82,25800.0
+Samsung,Galaxy S21,64,6,like_new,42,93,24100.0
+Xiaomi,Redmi Note 11,256,6,good,35,96,9600.0
+Apple,iPhone 13,128,4,good,22,90,39300.0
+Samsung,Galaxy S22,256,8,like_new,19,93,50400.0
+Samsung,Galaxy S22,128,6,poor,26,97,24000.0
+Samsung,Galaxy S22,64,6,good,18,75,37100.0
+Apple,iPhone 12,128,4,like_new,39,82,28600.0
+Xiaomi,Redmi Note 11,128,8,fair,47,96,5800.0
+Samsung,Galaxy S22,64,6,good,19,71,32300.0
+Samsung,Galaxy S22,128,6,poor,32,71,22100.0
+OnePlus,OnePlus 9,128,6,poor,20,71,16200.0
+Xiaomi,Redmi Note 11,256,6,like_new,15,71,13800.0
+Xiaomi,Redmi Note 11,256,8,fair,6,97,12500.0
+Samsung,Galaxy S22,256,6,good,47,71,29500.0
+Xiaomi,Redmi Note 11,256,6,like_new,26,78,12500.0
+Xiaomi,Redmi Note 11,256,8,poor,8,91,9800.0
+OnePlus,OnePlus 9,128,8,poor,19,98,19300.0
+Apple,iPhone 13,64,4,fair,20,86,33400.0
+Apple,iPhone 12,256,4,good,34,92,30300.0
+Samsung,Galaxy S21,256,6,good,15,80,41600.0
+Samsung,Galaxy S21,256,8,like_new,28,93,34700.0
+Samsung,Galaxy S21,256,6,fair,6,71,33600.0
+Apple,iPhone 13,64,4,poor,39,76,18300.0
+Samsung,Galaxy S22,256,6,poor,46,71,18600.0
+Samsung,Galaxy S21,64,6,poor,5,74,24700.0
+Samsung,Galaxy S21,256,8,good,27,89,33800.0
+Samsung,Galaxy S22,256,8,poor,30,89,27000.0
+Apple,iPhone 13,128,4,like_new,7,84,60100.0
+Apple,iPhone 12,128,4,poor,41,81,15900.0
+Apple,iPhone 13,128,4,good,11,88,48900.0
+Apple,iPhone 12,64,4,fair,10,83,32000.0
+OnePlus,OnePlus 9,256,8,poor,10,91,22500.0
+OnePlus,OnePlus 9,64,8,fair,25,85,19500.0
+Xiaomi,Redmi Note 11,128,6,good,47,72,7100.0
+Xiaomi,Redmi Note 11,128,8,poor,6,92,9400.0
+OnePlus,OnePlus 9,128,8,fair,5,87,32400.0
+Samsung,Galaxy S21,256,6,good,24,91,35500.0
+OnePlus,OnePlus 9,128,6,fair,38,97,18200.0
+Apple,iPhone 12,256,4,poor,31,79,21400.0
+Samsung,Galaxy S21,256,8,fair,44,98,23000.0
+Samsung,Galaxy S21,128,6,poor,19,85,20100.0
+OnePlus,OnePlus 9,128,6,like_new,29,92,28500.0
+Apple,iPhone 13,128,4,fair,8,92,43700.0
+OnePlus,OnePlus 9,64,8,fair,7,72,24500.0
+Apple,iPhone 12,64,4,good,16,79,31900.0
+Samsung,Galaxy S22,256,8,poor,10,91,35900.0
+Apple,iPhone 12,256,4,good,39,74,27900.0
+Apple,iPhone 12,64,4,good,8,91,34400.0
+Samsung,Galaxy S22,64,6,like_new,22,84,35000.0
+OnePlus,OnePlus 9,64,6,poor,12,83,17600.0
+OnePlus,OnePlus 9,128,6,good,11,75,31300.0
+Samsung,Galaxy S21,256,6,like_new,43,92,29000.0
+Apple,iPhone 12,128,4,like_new,3,83,50700.0
+Xiaomi,Redmi Note 11,128,8,poor,13,86,7300.0
+Samsung,Galaxy S21,128,8,fair,31,70,21300.0
+Samsung,Galaxy S21,128,8,good,43,94,22600.0
+Samsung,Galaxy S21,128,6,poor,6,91,23700.0
+Samsung,Galaxy S21,128,8,good,21,83,33600.0
+Samsung,Galaxy S22,256,6,poor,7,91,37300.0
+Apple,iPhone 13,256,4,poor,47,90,20700.0
+Xiaomi,Redmi Note 11,64,8,good,8,82,12000.0
+Apple,iPhone 12,128,4,poor,22,80,20500.0
+Samsung,Galaxy S22,64,6,like_new,10,76,42300.0
+Samsung,Galaxy S22,256,8,poor,21,71,26600.0
+OnePlus,OnePlus 9,64,8,fair,10,76,23900.0
+Xiaomi,Redmi Note 11,256,8,poor,9,78,8400.0
+Samsung,Galaxy S21,64,8,poor,15,80,20900.0
+Apple,iPhone 13,128,4,poor,22,90,27000.0
+Apple,iPhone 12,128,4,poor,29,81,17700.0
+Xiaomi,Redmi Note 11,64,8,fair,3,87,9200.0
+Xiaomi,Redmi Note 11,64,8,like_new,12,96,12300.0
+OnePlus,OnePlus 9,64,8,like_new,20,80,23300.0
+Apple,iPhone 12,64,4,like_new,11,86,35400.0
+Samsung,Galaxy S21,256,8,poor,26,89,22700.0
+OnePlus,OnePlus 9,64,6,good,32,82,22200.0
+Xiaomi,Redmi Note 11,256,8,fair,6,92,13600.0
+Apple,iPhone 13,64,4,like_new,10,75,51800.0
+Apple,iPhone 12,64,4,like_new,38,76,24500.0
+Xiaomi,Redmi Note 11,128,6,good,30,78,8800.0
+Apple,iPhone 12,64,4,poor,26,82,21800.0
+Samsung,Galaxy S21,256,6,fair,20,77,31900.0
+OnePlus,OnePlus 9,128,6,good,38,74,20400.0
+Samsung,Galaxy S22,256,6,like_new,41,72,34900.0
+Xiaomi,Redmi Note 11,256,8,fair,16,72,10500.0
+Samsung,Galaxy S22,64,8,like_new,38,74,25900.0
+Xiaomi,Redmi Note 11,128,8,like_new,42,75,7400.0
+Apple,iPhone 13,256,4,like_new,36,88,42900.0
+Apple,iPhone 12,256,4,like_new,16,85,44000.0
+Samsung,Galaxy S22,128,8,poor,20,94,25500.0
+OnePlus,OnePlus 9,64,8,poor,36,78,12400.0
+OnePlus,OnePlus 9,64,8,good,38,83,19400.0
+OnePlus,OnePlus 9,256,6,like_new,47,81,22100.0
+Samsung,Galaxy S22,128,6,like_new,47,76,28500.0
+Samsung,Galaxy S22,256,8,like_new,15,85,51700.0
+Samsung,Galaxy S22,256,6,good,42,93,31200.0
+Apple,iPhone 12,128,4,like_new,30,78,30200.0
+Samsung,Galaxy S22,256,8,like_new,23,76,43800.0
+OnePlus,OnePlus 9,128,6,good,24,71,24000.0
+Samsung,Galaxy S21,256,6,like_new,40,81,28500.0
+Xiaomi,Redmi Note 11,128,8,fair,27,77,7700.0
+Xiaomi,Redmi Note 11,64,6,like_new,27,85,10700.0
+OnePlus,OnePlus 9,256,6,like_new,21,70,31300.0
+Xiaomi,Redmi Note 11,64,8,fair,19,92,9300.0
+Samsung,Galaxy S22,64,6,good,5,89,43600.0
+Apple,iPhone 12,256,4,poor,5,80,32300.0
+Apple,iPhone 13,64,4,good,46,75,24100.0
+Xiaomi,Redmi Note 11,256,6,good,40,75,8900.0
+Apple,iPhone 12,64,4,like_new,20,72,36600.0
+Apple,iPhone 13,64,4,like_new,8,85,48700.0
+OnePlus,OnePlus 9,64,6,poor,4,88,20800.0
+Xiaomi,Redmi Note 11,128,6,fair,45,91,6600.0
+Samsung,Galaxy S21,64,6,good,6,75,35400.0
+OnePlus,OnePlus 9,128,8,like_new,36,77,21500.0
+Xiaomi,Redmi Note 11,256,8,fair,32,95,8700.0
+Apple,iPhone 13,64,4,good,36,76,27800.0
+Samsung,Galaxy S22,256,8,like_new,16,99,56200.0
+Samsung,Galaxy S21,128,8,good,30,83,26000.0
+Xiaomi,Redmi Note 11,64,8,good,34,88,7300.0
+Samsung,Galaxy S22,64,6,poor,23,71,20000.0
+Xiaomi,Redmi Note 11,64,8,good,22,94,8900.0
+Apple,iPhone 13,256,4,poor,24,86,31600.0
+Samsung,Galaxy S21,256,8,poor,44,84,15600.0
+Samsung,Galaxy S22,256,6,fair,8,72,37900.0
+Samsung,Galaxy S22,128,8,poor,18,84,28400.0
+Samsung,Galaxy S21,128,6,good,29,75,25000.0
+Apple,iPhone 12,128,4,like_new,32,82,30400.0
+Samsung,Galaxy S22,256,8,fair,4,76,46600.0
+Apple,iPhone 13,256,4,poor,10,82,37200.0
+Samsung,Galaxy S22,128,6,fair,16,82,31600.0
+OnePlus,OnePlus 9,64,6,poor,45,85,11800.0
+OnePlus,OnePlus 9,128,8,poor,39,76,13300.0
+Apple,iPhone 12,256,4,good,31,87,33300.0
+Apple,iPhone 13,256,4,like_new,26,80,41600.0
+Samsung,Galaxy S22,128,6,poor,17,76,25100.0
+Samsung,Galaxy S22,64,6,good,45,83,22600.0
+Xiaomi,Redmi Note 11,256,8,poor,29,93,6400.0
+Apple,iPhone 12,128,4,fair,6,86,36200.0
+Samsung,Galaxy S22,128,8,good,21,90,36500.0
+Samsung,Galaxy S21,64,6,fair,8,82,27400.0
+Xiaomi,Redmi Note 11,128,8,like_new,13,73,11600.0
+Apple,iPhone 12,64,4,poor,17,73,20800.0
+Apple,iPhone 12,256,4,good,33,71,30900.0
+Xiaomi,Redmi Note 11,128,8,poor,3,70,8800.0
+Samsung,Galaxy S22,128,6,like_new,23,90,45200.0
+Samsung,Galaxy S21,256,6,fair,43,73,21300.0
+Samsung,Galaxy S22,256,6,good,27,90,41500.0
+OnePlus,OnePlus 9,128,8,like_new,35,75,22100.0
+Xiaomi,Redmi Note 11,128,6,fair,16,97,10600.0
+OnePlus,OnePlus 9,64,6,fair,5,73,25200.0
+Samsung,Galaxy S21,64,8,good,22,86,26500.0
+Samsung,Galaxy S22,256,8,fair,39,76,29400.0
+Xiaomi,Redmi Note 11,128,6,fair,30,90,7600.0
+Xiaomi,Redmi Note 11,64,6,fair,23,74,7300.0
+Apple,iPhone 13,256,4,fair,44,83,29200.0
+Apple,iPhone 12,128,4,like_new,16,97,37900.0
+Samsung,Galaxy S22,64,8,poor,37,91,18700.0
+Apple,iPhone 12,256,4,like_new,27,93,32100.0
+Apple,iPhone 13,64,4,fair,45,88,21700.0
+Samsung,Galaxy S22,128,8,fair,9,89,37400.0
+OnePlus,OnePlus 9,256,6,like_new,41,85,24500.0
+Samsung,Galaxy S22,64,8,poor,46,73,16100.0
+Xiaomi,Redmi Note 11,64,6,good,12,91,10100.0
+Samsung,Galaxy S22,256,8,like_new,12,98,55700.0
+Apple,iPhone 12,256,4,poor,13,87,25900.0
+Samsung,Galaxy S22,64,8,good,7,90,41900.0
+Xiaomi,Redmi Note 11,128,8,like_new,33,90,9000.0
+Samsung,Galaxy S21,128,6,good,36,92,23100.0
+Apple,iPhone 12,64,4,poor,35,85,15100.0
+Apple,iPhone 13,128,4,poor,45,77,18200.0
+Samsung,Galaxy S22,128,6,poor,34,84,20600.0
+Apple,iPhone 13,64,4,fair,8,71,38600.0
+Samsung,Galaxy S21,64,6,like_new,22,90,31200.0
+Apple,iPhone 12,64,4,good,4,90,35900.0
+Samsung,Galaxy S22,64,6,fair,37,73,25000.0
+Apple,iPhone 13,128,4,good,17,81,42100.0
+Apple,iPhone 13,128,4,poor,26,76,24600.0
+Samsung,Galaxy S22,128,8,fair,37,80,23700.0
+Samsung,Galaxy S21,64,6,poor,40,98,15600.0
+Apple,iPhone 13,64,4,poor,43,78,17800.0
+Samsung,Galaxy S22,128,8,good,44,99,27000.0
+Samsung,Galaxy S21,128,6,poor,27,86,17800.0
+Apple,iPhone 13,256,4,like_new,3,72,70500.0
+Samsung,Galaxy S21,128,6,good,3,84,43300.0
+Xiaomi,Redmi Note 11,64,8,like_new,12,71,11400.0
+Xiaomi,Redmi Note 11,256,8,fair,5,72,12600.0
+Samsung,Galaxy S21,256,8,fair,47,99,21300.0
+Apple,iPhone 12,256,4,poor,10,83,30000.0
+Samsung,Galaxy S21,256,8,poor,20,79,25700.0
+Apple,iPhone 12,64,4,fair,16,75,27400.0
+Apple,iPhone 13,128,4,like_new,35,90,39800.0
+Samsung,Galaxy S22,256,6,good,14,85,49400.0
+Apple,iPhone 12,256,4,good,23,89,34100.0
+Samsung,Galaxy S21,64,6,fair,14,76,25300.0
+Xiaomi,Redmi Note 11,256,8,like_new,28,84,13500.0
+Apple,iPhone 13,256,4,fair,18,73,42400.0
+Xiaomi,Redmi Note 11,256,8,like_new,30,74,10100.0
+OnePlus,OnePlus 9,256,6,good,18,85,32000.0
+OnePlus,OnePlus 9,128,8,poor,11,83,20600.0
+Apple,iPhone 13,256,4,fair,14,77,40300.0
+Apple,iPhone 13,256,4,like_new,18,78,53200.0
+Apple,iPhone 12,64,4,poor,20,82,17600.0
+Samsung,Galaxy S21,128,8,good,17,72,30700.0
+Apple,iPhone 13,64,4,poor,29,99,23700.0
+Apple,iPhone 13,128,4,poor,26,97,26900.0
+Apple,iPhone 12,64,4,poor,36,95,16300.0
+Apple,iPhone 12,128,4,like_new,37,91,30800.0
+OnePlus,OnePlus 9,64,8,poor,25,72,14900.0
+Xiaomi,Redmi Note 11,64,6,like_new,15,89,11000.0
+Apple,iPhone 13,256,4,poor,39,88,22200.0
+Samsung,Galaxy S21,64,6,poor,15,99,22100.0
+Samsung,Galaxy S22,128,6,good,14,99,42900.0
+Apple,iPhone 13,256,4,like_new,15,95,60200.0
+Xiaomi,Redmi Note 11,256,6,good,36,85,9100.0
+Samsung,Galaxy S21,128,8,fair,5,74,33200.0
+Samsung,Galaxy S21,128,8,good,24,94,35600.0
+Apple,iPhone 12,64,4,poor,25,99,18300.0
+Apple,iPhone 13,64,4,poor,26,86,23500.0
+Apple,iPhone 12,64,4,fair,17,77,26400.0
+Xiaomi,Redmi Note 11,64,8,good,28,81,7800.0
+Samsung,Galaxy S21,128,6,like_new,39,70,26300.0
+Apple,iPhone 12,64,4,like_new,32,81,26000.0
+Apple,iPhone 13,64,4,poor,14,75,27500.0
+Apple,iPhone 13,128,4,good,35,84,32300.0
+Samsung,Galaxy S21,256,8,like_new,35,99,35600.0
+Samsung,Galaxy S21,64,8,good,37,97,27200.0
+Apple,iPhone 13,128,4,poor,32,98,23100.0
+Apple,iPhone 12,128,4,fair,23,92,26200.0
+Samsung,Galaxy S21,128,6,poor,41,77,15900.0
+OnePlus,OnePlus 9,128,6,like_new,8,89,36900.0
+Samsung,Galaxy S21,128,8,like_new,38,98,28100.0
+OnePlus,OnePlus 9,128,8,like_new,41,79,22400.0
+Samsung,Galaxy S21,128,6,good,40,71,23200.0
+Samsung,Galaxy S21,128,8,good,11,75,36200.0
+Apple,iPhone 12,64,4,good,14,80,31700.0
+Xiaomi,Redmi Note 11,256,8,like_new,20,78,13500.0
+Apple,iPhone 12,128,4,like_new,43,97,28000.0
+OnePlus,OnePlus 9,256,8,good,47,90,22000.0
+Xiaomi,Redmi Note 11,64,6,like_new,22,86,10000.0
+Apple,iPhone 13,64,4,fair,6,91,37400.0
+Samsung,Galaxy S22,128,8,poor,30,83,21100.0
+Samsung,Galaxy S22,256,8,like_new,4,72,61800.0
+Apple,iPhone 13,256,4,poor,32,84,24400.0
+Samsung,Galaxy S21,256,6,good,34,91,27800.0
+Apple,iPhone 12,128,4,poor,35,92,17100.0
+Apple,iPhone 12,64,4,like_new,46,74,20400.0
+OnePlus,OnePlus 9,64,8,good,30,78,18800.0
+Apple,iPhone 13,128,4,like_new,43,70,34200.0

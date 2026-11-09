@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealSense: search second-hand phones with price and fraud checks</title>
+<style>
+:root{--bg:#f4f6fa;--surf:#fff;--ink:#0e1726;--mut:#5d6a7e;--line:#e0e5ee;--acc:#0b7a5e;--accbg:#e2f5ee;--warn:#a86200;--warnbg:#fff0d4;--bad:#c0322b;--badbg:#fde4e2;--track:#e8ecf3;--shadow:0 10px 30px rgba(14,23,38,.12)}
+@media(prefers-color-scheme:dark){:root{--bg:#0b111b;--surf:#131b28;--ink:#e8eef8;--mut:#92a0b5;--line:#233045;--acc:#3ed1a5;--accbg:#103128;--warn:#f0b24a;--warnbg:#382b10;--bad:#ff7b72;--badbg:#3b1a19;--track:#1d2939;--shadow:0 10px 30px rgba(0,0,0,.5)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.top{background:var(--surf);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.bar{display:flex;align-items:center;gap:18px;padding:14px 0}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.02em;display:flex;gap:9px;align-items:center;white-space:nowrap}
+.logo i{width:28px;height:28px;border-radius:9px;background:var(--acc);color:var(--bg);display:grid;place-items:center;font-style:normal}
+.search{flex:1;display:flex;align-items:center;gap:10px;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:0 14px;height:48px}
+.search:focus-within{border-color:var(--acc);box-shadow:0 0 0 3px var(--accbg)}
+.search input{flex:1;border:0;background:none;height:100%;outline:none}
+.status{font-size:12px;font-weight:700;padding:5px 11px;border-radius:99px;white-space:nowrap;background:var(--track);color:var(--mut)}
+.status.live{background:var(--accbg);color:var(--acc)}.status.demo{background:var(--warnbg);color:var(--warn)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:0 0 14px}
+.chip{border:1px solid var(--line);background:var(--surf);border-radius:99px;padding:6px 14px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.sel{border:1px solid var(--line);background:var(--surf);border-radius:10px;padding:7px 10px}
+.rng{display:flex;align-items:center;gap:8px;color:var(--mut);font-size:13px}
+.rng input{accent-color:var(--acc)}
+.sw{display:flex;gap:7px;align-items:center;color:var(--mut);font-size:13px;margin-left:auto}
+.sw input{accent-color:var(--acc);width:16px;height:16px}
+.banner{margin:16px 0 0;padding:11px 14px;border-radius:12px;background:var(--warnbg);color:var(--warn);font-size:14px;display:none}
+.count{margin:18px 0 12px;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;padding-bottom:50px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:16px;overflow:hidden;cursor:pointer;text-align:left;padding:0;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.thumb{height:130px;position:relative;display:grid;place-items:center;color:#fff;font-weight:800;font-size:19px;letter-spacing:-.01em}
+.thumb .ph{width:54px;height:92px;border-radius:12px;border:3px solid rgba(255,255,255,.85);background:rgba(255,255,255,.14);position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(8deg)}
+.thumb span{position:relative;z-index:1;text-shadow:0 1px 8px rgba(0,0,0,.35);margin-top:60px}
+.tl{position:absolute;top:10px;left:10px;display:flex;gap:6px}
+.pill{font-size:12px;font-weight:700;padding:4px 10px;border-radius:99px;background:var(--surf);white-space:nowrap}
+.g{color:var(--acc)}.w{color:var(--warn)}.b{color:var(--bad)}
+.cb{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.ttl{font-weight:700}
+.meta{color:var(--mut);font-size:13px}
+.price{font-size:23px;font-weight:800;letter-spacing:-.02em}
+.fair{font-size:13px;color:var(--mut)}
+.risk{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:8px;font-size:13px;font-weight:600}
+.mini{flex:1;height:6px;border-radius:6px;background:var(--track);overflow:hidden}.mini i{display:block;height:100%}
+.sk{height:300px;border-radius:16px;background:linear-gradient(90deg,var(--track),var(--surf),var(--track));background-size:200% 100%;animation:sh 1.2s infinite}
+@keyframes sh{to{background-position:-200% 0}}
+@media(prefers-reduced-motion:reduce){.sk{animation:none}.card{transition:none}}
+.ov{position:fixed;inset:0;background:rgba(5,10,20,.5);display:none;z-index:9}
+.dr{position:fixed;top:0;right:0;bottom:0;width:min(480px,100%);background:var(--surf);z-index:10;overflow:auto;padding:24px;box-shadow:var(--shadow);transform:translateX(100%);transition:transform .25s}
+.open .ov{display:block}.open .dr{transform:none}
+.x{float:right;border:1px solid var(--line);background:none;border-radius:10px;width:36px;height:36px;cursor:pointer}
+.dr h2{margin:0 0 4px;font-size:22px;letter-spacing:-.02em;padding-right:44px}
+.big{font-size:30px;font-weight:800;letter-spacing:-.03em}
+.rb{position:relative;height:62px;margin:22px 6px 6px}
+.tk{position:absolute;left:0;right:0;top:34px;height:10px;border-radius:9px;background:var(--track)}
+.zn{position:absolute;top:34px;height:10px;border-radius:9px;background:var(--acc)}
+.md{position:absolute;top:28px;width:3px;height:22px;background:var(--ink)}
+.ak{position:absolute;top:0;transform:translateX(-50%);font-size:12px;font-weight:700;text-align:center}
+.ak b{display:block;background:var(--ink);color:var(--bg);padding:3px 8px;border-radius:7px;white-space:nowrap}
+.ak::after{content:"";display:block;width:2px;height:28px;background:var(--ink);margin:2px auto 0}
+.sec{border-top:1px solid var(--line);margin-top:18px;padding-top:16px}
+.sec h3{margin:0 0 8px;font-size:15px}
+ul.l{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+ul.l li{display:flex;gap:10px;padding:9px 12px;border-radius:10px;background:var(--bg);border:1px solid var(--line);font-size:14px}
+ul.l li i{flex:none;width:8px;height:8px;border-radius:50%;margin-top:7px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kv div{background:var(--bg);border-radius:10px;padding:9px 12px}.kv small{display:block;color:var(--mut)}
+.cta{width:100%;margin-top:18px;border:0;border-radius:11px;padding:13px;background:var(--acc);color:var(--bg);font-weight:700;cursor:pointer}
+.empty{grid-column:1/-1;text-align:center;color:var(--mut);padding:60px 0}
+@media(max-width:700px){.bar{flex-wrap:wrap}.search{order:3;flex-basis:100%}.sw{margin-left:0}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="bar"><div class="logo"><i>◆</i>DealSense</div>
+<label class="search"><span aria-hidden="true">🔍</span><input id="q" placeholder="Search phones, e.g. iPhone 13 128GB" aria-label="Search phones"></label>
+<span class="status" id="st">Connecting…</span></div>
+<div class="filters" id="fl">
+<button class="chip" data-b="All" aria-pressed="true">All</button><button class="chip" data-b="Apple" aria-pressed="false">Apple</button><button class="chip" data-b="Samsung" aria-pressed="false">Samsung</button><button class="chip" data-b="OnePlus" aria-pressed="false">OnePlus</button><button class="chip" data-b="Xiaomi" aria-pressed="false">Xiaomi</button>
+<select class="sel" id="cond" aria-label="Condition"><option value="">Any condition</option><option value="like_new">Like new</option><option value="good">Good</option><option value="fair">Fair</option><option value="poor">Poor</option></select>
+<label class="rng">Max <input type="range" id="mp" min="10000" max="80000" step="1000" value="80000"><b id="mpv">₹80,000</b></label>
+<select class="sel" id="so" aria-label="Sort"><option value="deal">Best deals, safe first</option><option value="risk">Lowest fraud risk</option><option value="pl">Price: low to high</option><option value="ph">Price: high to low</option></select>
+<label class="sw"><input type="checkbox" id="hide"> Hide high-risk</label></div>
+</div></header>
+
+<main class="wrap">
+<div class="banner" id="bn">The API at 127.0.0.1:8000 is not reachable, so these results use a built-in demo estimator. Start your server with <b>uvicorn main:app --reload</b> and refresh to use your trained model.</div>
+<div class="count" id="ct"></div>
+<div class="grid" id="gr"></div>
+</main>
+
+<div id="root"><div class="ov" id="ov"></div><aside class="dr" id="dr" role="dialog" aria-modal="true" aria-label="Listing details"></aside></div>
+
+<script>
+const API="http://127.0.0.1:8000/analyze";
+const M=[["iPhone 13","Apple",65000,4,215],["iPhone 12","Apple",52000,4,230],["Galaxy S21","Samsung",50000,8,250],["Galaxy S22","Samsung",60000,8,265],["OnePlus 9","OnePlus",42000,8,355],["Redmi Note 11","Xiaomi",16000,8,28]];
+const CL={like_new:["Like new",1],good:["Good",.9],fair:["Fair",.78],poor:["Poor",.6]},SF={64:.9,128:1,256:1.12};
+const CITY=["Gurugram","Delhi","Noida","Faridabad","Ghaziabad","Jaipur","Chandigarh"];
+const $=id=>document.getElementById(id),inr=n=>"₹"+Math.round(n).toLocaleString("en-IN");
+let seed=11;const rnd=()=>(seed=(seed*9301+49297)%233280)/233280,pick=a=>a[Math.floor(rnd()*a.length)];
+const base=(m,st,c,age,bat)=>m[2]*Math.pow(.985,age)*CL[c][1]*SF[st]*(.8+.2*bat/100);
+
+const SCAM=["Urgent sale, army transfer. Advance payment by UPI first. Only WhatsApp 9812345612. Courier delivery, no inspection.","Posted to another city, send token amount first. Courier shipping agent will deliver. Contact on Telegram only.","Like new sealed box. Need money urgently, pay in advance, no meet. WhatsApp 9899001122."];
+const items=[];
+for(let i=0;i<26;i++){const m=pick(M),st=pick([64,128,256]),c=pick(["like_new","good","good","fair","poor"]),age=3+Math.floor(rnd()*44),bat=72+Math.floor(rnd()*27);
+ const fair=base(m,st,c,age,bat);let f=.9+rnd()*.25,type="ok";
+ if(i%7==3){f=.52+rnd()*.08;type="scam"}else if(i%9==5){f=1.38+rnd()*.12;type="high"}
+ const scam=type=="scam";
+ items.push({id:i,model:m[0],brand:m[1],hue:m[4],ram:m[3],storage:st,cond:c,age,bat,ask:Math.round(fair*f/100)*100,city:pick(CITY),
+ text:`${m[0]} ${st}GB ${CL[c][0].toLowerCase()}. Battery health ${bat}%, bought ${age} months ago. `+(scam?pick(SCAM):(rnd()>.4?"Original box and bill included. ":"")+"Meet in a public place, check before paying."),
+ sage:scam?1+Math.floor(rnd()*5):60+Math.floor(rnd()*900),slist:scam?9+Math.floor(rnd()*7):1+Math.floor(rnd()*4),dup:scam?2+Math.floor(rnd()*4):0,res:null})}
+
+const PAT=[[/advance (payment|amount)|pay (first|in advance)/,"Asks for advance payment"],[/army|crpf|transfer(red)? officer|police/,"Uses a transfer-officer story"],[/courier|shipping agent|delivery agent/,"Pushes courier or agent delivery"],[/only (whatsapp|telegram)|whatsapp|telegram/,"Pushes chat off-platform"],[/token (amount|money)|upi.{0,12}first/,"Wants a token payment up front"],[/no (meet|inspection|visit)/,"Refuses in-person inspection"],[/urgent(ly)? sale|urgent(ly)? sell/,"Creates urgency"]];
+function localAnalyze(l){const mid=base(M.find(x=>x[0]==l.model),l.storage,l.cond,l.age,l.bat),lo=mid*.88,hi=mid*1.12;
+ const verdict=l.ask<=lo?"Great deal":l.ask<=hi?"Fair price":"Overpriced";
+ let sc=0;const r=[],t=l.text.toLowerCase(),d=(mid-l.ask)/mid;
+ if(d>.4){sc+=30;r.push(`Price is ${Math.round(d*100)}% below the market median`)}else if(d>.25){sc+=15;r.push(`Price is ${Math.round(d*100)}% below the market median`)}
+ const h=PAT.filter(p=>p[0].test(t)).map(p=>p[1]);sc+=Math.min(h.length*10,40);r.push(...h);
+ if(/\d[\d\s-]{8,}\d/.test(t)){sc+=10;r.push("Phone number placed inside the listing text")}
+ if(l.sage<7){sc+=15;r.push(`Very new seller account (${l.sage} days)`)}else if(l.sage<30){sc+=7;r.push(`Young seller account (${l.sage} days)`)}
+ if(l.slist>8&&l.sage<30){sc+=10;r.push(`${l.slist} listings from an account under 30 days old`)}
+ if(l.dup>0){sc+=Math.min(10+5*l.dup,30);r.push(`Photos appear in ${l.dup} other seller listing(s)`)}
+ sc=Math.min(sc,100);return{price:{low:Math.round(lo),median:Math.round(mid),high:Math.round(hi),verdict},fraud:{score:sc,level:sc>=60?"High":sc>=30?"Medium":"Low",reasons:r}}}
+
+let demo=false;
+async function analyze(l){
+ try{const r=await fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({text:l.text,asking_price:l.ask,brand:l.brand,model:l.model,storage_gb:l.storage,ram_gb:l.ram,condition:l.cond,age_months:l.age,battery_health:l.bat,seller_account_age_days:l.sage,seller_num_listings:l.slist,duplicate_photos:l.dup})});
+  if(!r.ok)throw 0;return await r.json()}catch(e){demo=true;return localAnalyze(l)}}
+
+const S={b:"All",q:"",c:"",mp:80000,so:"deal",hide:false};
+const vc=v=>v=="Great deal"?"g":v=="Fair price"?"w":"b",rc=l=>l=="High"?"b":l=="Medium"?"w":"g",rv=l=>l=="High"?"var(--bad)":l=="Medium"?"var(--warn)":"var(--acc)";
+function view(){let a=items.filter(l=>(S.b=="All"||l.brand==S.b)&&(!S.c||l.cond==S.c)&&l.ask<=S.mp&&(`${l.model} ${l.storage}GB ${l.city} ${l.brand}`.toLowerCase().includes(S.q)));
+ if(S.hide)a=a.filter(l=>!l.res||l.res.fraud.level!="High");
+ const k=l=>l.res?(l.ask-l.res.price.median)/l.res.price.median*100:0,s=l=>l.res?l.res.fraud.score:0;
+ a.sort({deal:(x,y)=>(k(x)+s(x)*.6)-(k(y)+s(y)*.6),risk:(x,y)=>s(x)-s(y),pl:(x,y)=>x.ask-y.ask,ph:(x,y)=>y.ask-x.ask}[S.so]);return a}
+function render(){const a=view();$("ct").textContent=`${a.length} phone${a.length==1?"":"s"} found, each checked for price and fraud risk`;
+ $("gr").innerHTML=a.length?a.map(l=>{const r=l.res;if(!r)return'<div class="sk"></div>';const p=r.price,f=r.fraud;
+ return`<button class="card" data-id="${l.id}"><div class="thumb" style="background:linear-gradient(135deg,hsl(${l.hue} 55% 38%),hsl(${(l.hue+40)%360} 60% 55%))"><div class="ph"></div><span>${l.model}</span><div class="tl"><span class="pill ${vc(p.verdict)}">${p.verdict}</span></div></div>
+ <div class="cb"><div class="ttl">${l.model} · ${l.storage}GB</div><div class="meta">${CL[l.cond][0]} · ${l.age} mo · battery ${l.bat}% · ${l.city}</div>
+ <div class="price">${inr(l.ask)}</div><div class="fair">Fair range ${inr(p.low)} – ${inr(p.high)}</div>
+ <div class="risk"><span class="${rc(f.level)}">${f.level} risk</span><div class="mini"><i style="width:${f.score}%;background:${rv(f.level)}"></i></div><span class="meta">${f.score}</span></div></div></button>`}).join(""):'<div class="empty">No phones match these filters. Try a different brand, raise the max price, or clear the search.</div>'}
+
+function tips(l,f){const t=[];if(f.level!="Low"){t.push("Never pay in advance or send a token amount before you see the phone.","Meet in a busy public place and test the phone before paying.","Ask for a live video of the phone next to a note with today’s date.")}else{t.push("Ask for the original bill and box, and check battery health in Settings.","Meet in person and test the camera, speakers and charging.")}
+ t.push("Check the IMEI on the Sanchar Saathi portal before paying.");return t}
+function open(id){const l=items.find(x=>x.id==id),p=l.res.price,f=l.res.fraud,mn=p.low*.55,mx=p.high*1.45,pos=v=>Math.max(3,Math.min(97,(v-mn)/(mx-mn)*100)),pct=Math.round((l.ask-p.median)/p.median*100);
+ $("dr").innerHTML=`<button class="x" id="cl" aria-label="Close">✕</button><h2>${l.model} · ${l.storage}GB</h2><div class="meta">${CL[l.cond][0]} · ${l.age} months old · battery ${l.bat}% · ${l.city}</div>
+ <div class="sec" style="border:0;margin-top:14px"><div class="meta">Asking price</div><div class="big">${inr(l.ask)}</div><span class="pill ${vc(p.verdict)}" style="background:var(--bg)">${p.verdict} · ${pct>0?"+":""}${pct}% vs median</span>
+ <div class="rb"><div class="tk"></div><div class="zn" style="left:${pos(p.low)}%;width:${pos(p.high)-pos(p.low)}%"></div><div class="md" style="left:${pos(p.median)}%"></div><div class="ak" style="left:${pos(l.ask)}%"><b>Asking</b></div></div>
+ <div class="meta" style="display:flex;justify-content:space-between"><span>${inr(p.low)}</span><span>Median ${inr(p.median)}</span><span>${inr(p.high)}</span></div></div>
+ <div class="sec"><h3>Fraud risk: <span class="${rc(f.level)}">${f.level} (${f.score}/100)</span></h3><ul class="l">${f.reasons.length?f.reasons.map(r=>`<li><i style="background:var(--bad)"></i>${r}</li>`).join(""):'<li><i style="background:var(--acc)"></i>No scam signals found in the text, price or seller details.</li>'}</ul></div>
+ <div class="sec"><h3>Seller</h3><div class="kv"><div><small>Account age</small>${l.sage} days</div><div><small>Active listings</small>${l.slist}</div><div><small>Photos reused elsewhere</small>${l.dup}</div><div><small>Location</small>${l.city}</div></div></div>
+ <div class="sec"><h3>Listing text</h3><div class="meta">${l.text}</div></div>
+ <div class="sec"><h3>Before you pay</h3><ul class="l">${tips(l,f).map(t=>`<li><i style="background:var(--acc)"></i>${t}</li>`).join("")}</ul></div>
+ <button class="cta" id="cl2">Back to results</button>`;
+ $("root").classList.add("open");$("cl").onclick=$("cl2").onclick=close;$("cl").focus()}
+function close(){$("root").classList.remove("open")}
+$("ov").onclick=close;document.addEventListener("keydown",e=>{if(e.key=="Escape")close()});
+$("gr").onclick=e=>{const c=e.target.closest(".card");if(c)open(+c.dataset.id)};
+$("q").oninput=e=>{S.q=e.target.value.toLowerCase().trim();render()};
+$("fl").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;S.b=b.dataset.b;document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x==b));render()};
+$("cond").onchange=e=>{S.c=e.target.value;render()};$("so").onchange=e=>{S.so=e.target.value;render()};
+$("hide").onchange=e=>{S.hide=e.target.checked;render()};
+$("mp").oninput=e=>{S.mp=+e.target.value;$("mpv").textContent=inr(S.mp);render()};
+
+render();
+Promise.all(items.map(async l=>{l.res=await analyze(l)})).then(()=>{
+ $("st").textContent=demo?"Demo mode":"Live model";$("st").className="status "+(demo?"demo":"live");$("bn").style.display=demo?"block":"none";render()});
+</script>
+</body>
+</html>
